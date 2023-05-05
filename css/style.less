@@ -1,0 +1,253 @@
+/* @link https://utopia.fyi/type/calculator?c=320,18,1.2,1920,22,1.25,7,4,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=3xs,xl,3xl,12 */
+:root{
+    --font-family-base: 'Inter', sans-serif;
+    --font-family-heading: 'JetBrains Mono', monospace;
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-extrabold: 800;
+    --font-weight-black: 900;
+    --font-weight-base: var(--font-weight-normal);
+    --line-height-base: 1.5;
+    --line-height-heading: 1.25;
+
+    --color-text: #000;
+    --color-text-light: #fff;
+    --color-text-muted: #6c757d;
+    --color-text-muted-light: #adb5bd;
+    --color-text-muted-lighter: #e9ecef;
+    --color-text-muted-lightest: #f8f9fa;
+
+    --color-link: #0d6efd;
+    --color-link-hover: #0a58ca;
+    --color-link-active: #0d6efd;
+    --color-link-disabled: #6c757d;
+
+    --color-heading: #71a3e1;
+
+    --color-background: #fff;
+    --color-background-muted: #f8f9fa;
+    --color-background-muted-light: #e9ecef;
+    --color-background-muted-lighter: #dee2e6;
+
+    --border-color: #dee2e6;
+
+    --border-radius: 0.25rem;
+
+
+}
+
+
+:root {
+  --step--4: clamp(0.54rem, calc(0.54rem + 0.02vw), 0.56rem);
+  --step--3: clamp(0.65rem, calc(0.64rem + 0.05vw), 0.7rem);
+  --step--2: clamp(0.78rem, calc(0.76rem + 0.1vw), 0.88rem);
+  --step--1: clamp(0.94rem, calc(0.91rem + 0.16vw), 1.1rem);
+  --step-0: clamp(1.13rem, calc(1.08rem + 0.25vw), 1.38rem);
+  --step-1: clamp(1.35rem, calc(1.28rem + 0.37vw), 1.72rem);
+  --step-2: clamp(1.62rem, calc(1.51rem + 0.53vw), 2.15rem);
+  --step-3: clamp(1.94rem, calc(1.8rem + 0.74vw), 2.69rem);
+  --step-4: clamp(2.33rem, calc(2.13rem + 1.02vw), 3.36rem);
+  --step-5: clamp(2.8rem, calc(2.52rem + 1.4vw), 4.2rem);
+  --step-6: clamp(3.36rem, calc(2.98rem + 1.89vw), 5.25rem);
+  --step-7: clamp(4.03rem, calc(3.53rem + 2.53vw), 6.56rem);
+}
+
+/* @link https://utopia.fyi/space/calculator?c=320,18,1.2,1920,22,1.25,7,4,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=3xs,xl,3xl,12 */
+
+:root {
+  --space-3xs: clamp(0.31rem, calc(0.3rem + 0.06vw), 0.38rem);
+  --space-2xs: clamp(0.56rem, calc(0.54rem + 0.13vw), 0.69rem);
+  --space-xs: clamp(0.88rem, calc(0.84rem + 0.19vw), 1.06rem);
+  --space-s: clamp(1.13rem, calc(1.08rem + 0.25vw), 1.38rem);
+  --space-m: clamp(1.69rem, calc(1.61rem + 0.38vw), 2.06rem);
+  --space-l: clamp(2.25rem, calc(2.15rem + 0.5vw), 2.75rem);
+  --space-xl: clamp(3.38rem, calc(3.23rem + 0.75vw), 4.13rem);
+  --space-2xl: clamp(4.5rem, calc(4.3rem + 1vw), 5.5rem);
+  --space-3xl: clamp(6.75rem, calc(6.45rem + 1.5vw), 8.25rem);
+
+  /* One-up pairs */
+  --space-3xs-2xs: clamp(0.31rem, calc(0.24rem + 0.38vw), 0.69rem);
+  --space-2xs-xs: clamp(0.56rem, calc(0.46rem + 0.5vw), 1.06rem);
+  --space-xs-s: clamp(0.88rem, calc(0.78rem + 0.5vw), 1.38rem);
+  --space-s-m: clamp(1.13rem, calc(0.94rem + 0.94vw), 2.06rem);
+  --space-m-l: clamp(1.69rem, calc(1.48rem + 1.06vw), 2.75rem);
+  --space-l-xl: clamp(2.25rem, calc(1.88rem + 1.88vw), 4.13rem);
+  --space-xl-2xl: clamp(3.38rem, calc(2.95rem + 2.13vw), 5.5rem);
+  --space-2xl-3xl: clamp(4.5rem, calc(3.75rem + 3.75vw), 8.25rem);
+
+  /* Custom pairs */
+  --space-s-l: clamp(1.13rem, calc(0.8rem + 1.63vw), 2.75rem);
+}
+
+/* @link https://utopia.fyi/grid/calculator?c=320,18,1.2,1920,22,1.25,7,4,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=3xs,xl,3xl,12 */
+
+:root {
+  --grid-max-width: 152.63rem;
+  --grid-gutter: var(
+    --space-3xs-xl,
+    clamp(0.31rem, calc(-0.26rem + 2.87vw), 4.13rem)
+  );
+  --grid-columns: 12;
+}
+
+.u-container {
+  max-width: var(--grid-max-width);
+  padding-inline: var(--grid-gutter);
+  margin-inline: auto;
+}
+
+.u-grid {
+    display: grid;
+    gap: var(--grid-gutter);
+    // grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+    // grid-auto-flow: dense;  
+}
+
+  .u-col-1 {
+    grid-column: span 1;
+  }
+  
+  
+
+
+// setup typography
+// Path: css\style.less
+
+body {
+  font-family: var(--font-family-base);
+  font-size: var(--step-0);
+  line-height: var(--line-height-base);
+  font-weight: var(--font-weight-base);
+  color: var(--color-text);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-heading);
+  font-weight: var(--font-weight-heading);
+  line-height: var(--line-height-heading);
+  color: var(--color-heading);
+}
+
+h1 {
+  font-size: var(--step-6);
+}
+
+h2 {
+  font-size: var(--step-5);
+}
+
+h3 {
+  font-size: var(--step-4);
+}
+
+h4 {
+  font-size: var(--step-3);
+}
+
+h5 {
+  font-size: var(--step-2);
+}
+
+h6 {
+  font-size: var(--step-1);
+}
+
+p {
+  margin-block: var(--space-m);
+}
+
+a {
+  color: var(--color-link);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:focus {
+  outline: 2px solid var(--color-link);
+}
+
+a:active {
+  color: var(--color-link-active);
+}
+
+a:visited {
+  color: var(--color-link-active);
+}
+
+blockquote {
+  margin-block: var(--space-m);
+  padding-inline: var(--space-m);
+  border-inline-start: 0.25rem solid var(--color-border);
+}
+
+blockquote p:last-child {
+  margin-block: 0;
+}
+
+blockquote cite {
+  display: block;
+  margin-block: var(--space-xs);
+  font-size: var(--step-0);
+  font-style: normal;
+  color: var(--color-text);
+}
+
+
+// setup forms
+// Path: css\style.less
+
+input,
+textarea,
+select {
+  font-family: var(--font-family-base);
+  font-size: var(--step-0);
+  line-height: var(--line-height-base);
+  font-weight: var(--font-weight-base);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  background-color: var(--color-background);
+  padding-block: var(--space-xs);
+  padding-inline: var(--space-s);
+  transition: var(--border-color) 0.2s ease-in-out;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: var(--color-border-focus);
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+  appearance: none;
+}
+
+input[type="checkbox"] {
+  vertical-align: middle;
+}
+
+input[type="checkbox"]:focus,
+input[type="radio"]:focus {
+  outline: none;
+}
